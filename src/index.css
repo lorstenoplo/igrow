@@ -1,13 +1,150 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+    margin-top: -10px;
+    background: #ffffff !important;
+    margin-bottom: 40px;
+}
+
+.navbar a{
+    color: rgb(80, 79, 79) ;
+    font-size: 1.3rem;
+}
+
+.navbar a:hover {
+ color: #3498db !important;
+}
+.navbar-brand{
+    margin-top: 10px;
+    color: #0d70b3 !important;
+    font-size: 2rem !important;
+}
+.brand-name{
+    color: #0d70b3 !important;
+    font-size: 2.05rem;
+}
+.heading{
+    font-size: 2rem;
+}
+.h-primary{
+    font-size: 1.6rem;
+}
+
+.boom{
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+}
+#animated{
+    animation: Slide_Up 2s ease-in-out infinite alternate-reverse both;
+}
+a{
+    text-decoration: none;
+}
+.turner a{
+    text-decoration: none;
+    color: black;
+}
+.turner{
+    border: 1px solid;
+    width: 35%;
+    padding: 6px 6px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 1.08rem;
+    transition: 0.4s;
+}
+.turner:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+@keyframes Slide_Up{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+/* ----- */
+
+.header-img img{
+    height: 350px;
+}
+.btn{
+    /* width: 35%;  */
+}
+.btn a:hover{
+    color: white !important;
+}
+.card >img{
+    height: 30vh;
+    border-bottom: black;
+}
+.card-img-top{
+    border-bottom: black !important;
+}
+.bam{
+    margin-top: -40px;
+}
+
+footer{
+ 
+   height: fit-content;
+   
+}
+footer >p{
+    text-align: center;
+}
+@media only screen and (max-width:700px){
+    .boom{
+        border-bottom: none;
+    }
+    .header-img{
+        text-align: center;
+    }
+    .header-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .brand-name{
+        color: #0d70b3 !important;
+        font-size: 1.9rem;
+    }
+    .heading{
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .h-primary{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .turner{
+        width: 70%; 
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw !important;
+        height: fit-content;
+       text-align: center;
+       right: 16%;
+    }
+    .card-title{
+        font-weight: bold;
+        font-size: 2rem;
+    }
 }
